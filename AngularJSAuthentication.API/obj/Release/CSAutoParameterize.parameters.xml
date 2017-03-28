@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="AuthContext-Web.config Connection String" description="AuthContext Connection String used in web.config by the application to access the database." defaultValue="Data Source=s01.everleap.com;Initial Catalog=DB_2767_vimobdb;Persist Security Info=True;User ID=DB_2767_vimobdb_user;Password=Zimbo703!" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\VisualStudioDevelopment\\Projects\\AngularJSAuthentication\.API\\AngularJSAuthentication\.API\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='AuthContext']/@connectionString" />
+  </parameter>
+  <parameter name="AngularJSAuthEntities-Web.config Connection String" description="AngularJSAuthEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/CampaignModel.csdl|res://*/CampaignModel.ssdl|res://*/CampaignModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=s01.everleap.com;initial catalog=DB_2767_vimobdb;user id=DB_2767_vimobdb_user;password=Zimbo703!;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\VisualStudioDevelopment\\Projects\\AngularJSAuthentication\.API\\AngularJSAuthentication\.API\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='AngularJSAuthEntities']/@connectionString" />
+  </parameter>
+  <parameter name="CampaignEntities-Web.config Connection String" description="CampaignEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/CampaignModel.csdl|res://*/CampaignModel.ssdl|res://*/CampaignModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=s01.everleap.com;Initial Catalog=DB_2767_vimobdb;Persist Security Info=True;User ID=DB_2767_vimobdb_user;Password=Zimbo703!&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\VisualStudioDevelopment\\Projects\\AngularJSAuthentication\.API\\AngularJSAuthentication\.API\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='CampaignEntities']/@connectionString" />
+  </parameter>
+  <parameter name="AuthContext_DatabasePublish-Web.config Connection String" description="AuthContext_DatabasePublish Connection String used in web.config by the application to access the database." defaultValue="Data Source=s01.everleap.com;Initial Catalog=DB_2767_vimobdb;Persist Security Info=True;User ID=DB_2767_vimobdb_user;Password=Zimbo703!" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\VisualStudioDevelopment\\Projects\\AngularJSAuthentication\.API\\AngularJSAuthentication\.API\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='AuthContext_DatabasePublish']/@connectionString" />
+  </parameter>
+</parameters>

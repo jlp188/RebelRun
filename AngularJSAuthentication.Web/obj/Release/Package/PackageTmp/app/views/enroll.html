@@ -1,0 +1,112 @@
+﻿<br /><br />
+<!--<div class="col-md-4"></div>
+<div class="col-md-4"><h4 style="color:red">If the Visalus Customer page fails to load, please <a href="{{viLink}}">Click Here.</a></h4></div>
+<div class="col-md-4"></div>-->
+
+<div class="col-md-4">
+    &nbsp;
+</div>
+<div class="col-md-4">
+    <h4 style="color:red">
+        If the Visalus Customer page fails to load, please enable pop-ups on your browser and reload the page. 
+    </h4>
+    <h5>
+        (Otherwise <a href="{{viLink}}">Click Here.</a>  After you complete the customer's purchase and <strong><em>write down their customer number</em></strong>,
+        close the page, log back into the app and come back to this page to fill in the customer's information and submit it.)
+        <br />
+    </h5>
+</div>
+<div class="col-md-4">
+    &nbsp;
+</div>
+
+<!--<div class="col-md-4">
+    &nbsp;
+</div>-->
+
+<!--<div class="col-md-4">-->
+    <form name="enrollForm" novalidate data-ng-submit="enroll()">
+        <!--<div class="col-md-8">-->
+        <style>
+            label {
+                width: 180px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            input {
+                width: 180px;
+                vertical-align: middle;
+                padding-bottom: 5px !important;
+                margin-bottom: 2px;
+            }
+
+                input.data-ng-invalid {
+                    border: solid red 2px;
+                }
+
+            form {
+                padding: 10px;
+                vertical-align: middle;
+            }
+        </style>
+
+        <!--<h4 style="color:red">
+            If the Visalus Customer page fails to load, please <a href="{{viLink}}">Click Here.</a></h4>
+        <h5>
+            (After you complete the customer's purchase and write down their customer number,
+            close the page, log back into the app and come back to this page to fill in the customer's information and submit it.)
+            <br />
+        </h5>-->
+        
+        <div class="col-md-4">
+            &nbsp;
+        </div>
+        <div class="col-md-4">
+
+            <label for="textEdit"><strong>Customer Name:</strong></label>
+            <input type="text" name="customerName" data-ng-minlength="3" data-ng-maxlength="30" required data-ng-model="enrollData.Name" />
+            <div data-ng-messages="enrollForm.customerName.$error" data-ng-if="enrollForm.customerName.$dirty">
+                <div data-ng-message="required">This field is required</div>
+                <div data-ng-message="minlength">Message must be over 2 characters</div>
+                <div data-ng-message="maxlength">Message must not exceed 30 characters</div>
+            </div><br />
+
+            <label><strong>Email Address:</strong></label>
+            <input type="email" name="userEmail" data-ng-model="enrollData.Email" data-ng-pattern="/[a-z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/i" required />
+            <div data-ng-messages="enrollForm.userEmail.$error" data-ng-if="enrollForm.userEmail.$dirty">
+                <div data-ng-message="required">This field is required</div>
+                <!--<div data-ng-message="email">Your email address is invalid</div>-->
+                <div data-ng-message="pattern">Your email address is invalid</div>
+            </div><br />
+
+            <label><strong>Phone Number:</strong></label>
+            <input type="text" name="userPhoneNumber" data-ng-model="enrollData.Phone" data-ng-pattern="/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/" required />
+            <div data-ng-messages="enrollForm.userPhoneNumber.$error" data-ng-if="enrollForm.userPhoneNumber.$dirty">
+                <div data-ng-message="required">This field is required</div>
+                <div data-ng-message="pattern">Must be a valid 10 digit phone number</div>
+            </div><br />
+
+            <label for="numberEdit"><strong>Visalus ID Number:</strong></label>
+            <input id="numberEdit" name="viid" type="number" required min="1104100" max="9999999" data-ng-model="enrollData.ID" />
+            <div data-ng-messages="enrollForm.viid.$error" data-ng-if="enrollForm.viid.$dirty">
+                <div data-ng-message="required">This field is required</div>
+                <div data-ng-message="min">The ID number value is too small.</div>
+                <div data-ng-message="max">The ID number value is too large.</div>
+
+            </div><br />
+            <br />
+            <button type="submit" data-ng-disabled="enrollForm.$invalid">Submit</button>
+        </div>
+        <div class="col-md-4">
+            &nbsp;
+        </div>
+
+
+
+    </form>
+<!--</div>-->
+
+<!--<div class="col-md-4">
+    &nbsp;
+</div>-->

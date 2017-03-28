@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AngularJSAuthModelStoreContainer" CdmEntityContainer="AngularJSAuthEntities">
+    <EntitySetMapping Name="Campaigns">
+      <EntityTypeMapping TypeName="AngularJSAuthModel.Campaign">
+        <MappingFragment StoreEntitySet="Campaign">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SeqNo" ColumnName="SeqNo" />
+          <ScalarProperty Name="Lvl" ColumnName="Lvl" />
+          <ScalarProperty Name="Rank" ColumnName="Rank" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="PrntID" ColumnName="PrntID" />
+          <ScalarProperty Name="PassPrnt" ColumnName="PassPrnt" />
+          <ScalarProperty Name="EnrollerID" ColumnName="EnrollerID" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="LastLoginDate" ColumnName="LastLoginDate" />
+          <ScalarProperty Name="DeviceID" ColumnName="DeviceID" />
+          <ScalarProperty Name="TokenID" ColumnName="TokenID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="usp_getQualifiedPassdown" FunctionName="AngularJSAuthModel.Store.usp_getQualifiedPassdown">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="AngularJSAuthModel.usp_getQualifiedPassdown_Result">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SeqNo" ColumnName="SeqNo" />
+          <ScalarProperty Name="Lvl" ColumnName="Lvl" />
+          <ScalarProperty Name="PrntID" ColumnName="PrntID" />
+          <ScalarProperty Name="PassPrnt" ColumnName="PassPrnt" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

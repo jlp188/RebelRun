@@ -1,0 +1,127 @@
+﻿/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.navbar{
+    background-color: #00b00b;
+    color: darkslategray;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+	color: #fff;
+}
+
+.navbar-inverse .navbar-brand {
+	color: #fff !important;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    background-color: #f5f5f5;
+}
+
+.text-muted {
+    margin: 20px 0;
+}
+
+.form-login {
+    max-width: 330px;
+    padding: 0px 15px 5px 15px;
+    margin: 0 auto;
+}
+
+    .form-login .form-login-heading {
+        margin-bottom: 10px;
+    }
+
+    .form-login .form-control {
+        position: relative;
+        height: auto;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+        .form-login .form-control:focus {
+            z-index: 2;
+        }
+
+    .form-login input[type="password"] {
+        margin-top:5px;
+        margin-bottom: 5px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+input, .form-control {
+    padding: 3px !important;
+}
+
+label{
+    padding-top: 10px;
+}
+
+.col-md-4{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    align-content:center !important;
+}
+
+.imageButton(@imageName) {
+    /*background-color: mix(@midColor, @endColor, 80%);*/
+    background-image: url(@imageName);
+    background-image: url(@imageName), -moz-linear-gradient(top, @startColor, @midColor @colorStop, @endColor);
+    /*background-image: url(@imageName), -ms-linear-gradient(@startColor, @midColor @colorStop, @endColor);*/
+    background-image: url(@imageName), -webkit-linear-gradient(@startColor, @midColor @colorStop, @endColor);
+    background-image: url(@imageName), -webkit-linear-gradient(#ffffff, #ffffff 25%, #e6e6e6);
+    background-image: url(@imageName), -o-linear-gradient(@startColor, @midColor @colorStop, @endColor);
+    background-image: url(@imageName), linear-gradient(@startColor, @midColor @colorStop, @endColor);
+    background-repeat: no-repeat;
+    filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@startColor,@endColor)); /* IE9 and down, gets no color-stop at all for proper fallback*/
+}
+/* then use it with the following elsewhere in your CSS*/
+.btnAdd {
+    background-color: #4ab367;
+    .imageButton('../../app/pushbullet.png');
+}
+
+.js-video {
+  height: 0;
+  padding-top: 25px;
+  padding-bottom: 67.5%;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.js-video.widescreen {
+  padding-bottom: 56.34%;
+}
+
+.js-video.vimeo {
+  padding-top: 0;
+}
+
+.js-video embed, .js-video iframe, .js-video object, .js-video video {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}

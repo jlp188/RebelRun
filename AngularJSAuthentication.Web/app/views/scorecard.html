@@ -1,0 +1,141 @@
+﻿<div class="container">
+    <div class="jumbotron">
+        <div class="container">
+            <div class="page-header text-center">
+                <h1>The 'Rebel Run'</h1>
+            </div>
+            <div class="container" ng-show="kidCount()<3">
+                <div class="container" ng-show="nowDate()==true">
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8" style="text-align:center"><p><h6><strong>Your clock is ticking! You have exactly this much time to get your 3!</strong></h6></p></div>
+                        <div class="col-md-2"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4" style="color:red; text-align:center"><p><h6><strong><span countdown end-date="{{ expDate }}" units="days|hours|minutes|seconds"></span></strong></h6></p></div>
+                        <div class="col-md-4"></div>
+                    </div>
+                    <!--<div class="unexpired" ng-show="nowDate()!=true">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8" style="text-align:center"><p><h6><strong>You still have time!</strong></h6></p></div>
+                        <div class="col-md-2"></div>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <br /><br />
+</div>
+
+
+
+<div class="container">
+    <div class="row" style="margin-bottom:15px">
+        <div class="col-md-4">
+            <div class="customer" ng-show="kidCount()==0" style="text-align:center;">
+                <a class="btn btn-md btn-default" style="color:orangered; border-color:dimgrey; margin:15px 0 15px 0">
+                    <i class="fa fa-user-times fa-3x pull-left"></i><strong>Customer 1</strong><br />Not yet...
+                </a>
+            </div>
+            <div class="customer" ng-show="kidCount()>0" style="text-align:center;">
+                <a class="btn btn-md btn-success" style="margin:15px 0 15px 0">
+                    <i class="fa fa-user fa-3x pull-left"></i> Customer 1
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="customer" ng-show="kidCount()<2" style="text-align:center">
+                <a class="btn btn-md btn-default" style="color:orangered; border-color:dimgrey; margin:15px 0 15px 0">
+                    <i class="fa fa-user-times fa-3x pull-left"></i><strong>Customer 2</strong><br />Not yet...
+                </a>
+            </div>
+            <div class="customer" ng-show="kidCount()>1" style="text-align:center;">
+                <a class="btn btn-md btn-success" style="margin:15px 0 15px 0">
+                    <i class="fa fa-user fa-3x pull-left"></i> Customer 2
+                </a>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="customer" ng-show="kidCount()<3" style="text-align:center">
+                <a class="btn btn-md btn-default" style="color:orangered; border-color:dimgrey; margin:15px 0 15px 0">
+                    <i class="fa fa-user-times fa-3x pull-left"></i><strong>Customer 3</strong><br />Not yet...
+                </a>
+            </div>
+            <div class="customer" ng-show="kidCount()>2" style="text-align:center;">
+                <a class="btn btn-md btn-success" style="margin:15px 0 15px 0">
+                    <i class="fa fa-user fa-3x pull-left"></i> Customer 3
+                </a>
+            </div>
+        </div><br />
+        </div>
+        <div class="row" ng-show="true">
+            <div class="col-md-12">
+                <div class="progress">
+                    <div class="progress-bar" ng-show="kidCount()==0" style="width: 2%; height: auto">
+                        <span class="sr-only">50% Complete (warning)</span>0%
+                    </div>
+                    <div class="progress-bar progress-bar-warning progress-bar-striped" ng-show="kidCount()==0" style="width: 98%; height: auto">
+                        <span class="sr-only">35% Complete (success)</span>NO Customers
+                    </div>
+                    <div class="progress-bar progress-bar-success" ng-show="kidCount()>0" style="width: 33%; height: auto">
+                        <span class="sr-only">35% Complete (success)</span>Customer 1: DONE
+                    </div>
+                    <div class="progress-bar progress-bar-success progress-bar-striped" ng-show="kidCount()>1" style="width: 33%; height: auto">
+                        <span class="sr-only">20% Complete (warning)</span>Customer 2: DONE
+                    </div>
+                    <div class="progress-bar progress-bar-success" ng-show="kidCount()>2"  style="width: 34%; height: auto">
+                        <span class="sr-only">10% Complete (danger)</span>Customer 3: DONE!!
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" ng-show="kidCount()>2 && kidCount()<4">
+            <div class="col-md-2"></div>
+            <div class="col-md-8" style="text-align:center">
+                <p style="text-align:left">
+                    <div class="alert alert-success" role="alert">
+                        Congratulations!! You've gotten your 3!...
+                    </div>
+                    <h5 style="text-align:left">
+                        You've secured yourself a place in the Rebel Run network and will be receiving a notification in the near future to pay your promoter's fee and start picking up a paycheck! Make sure you are ready to make approximately a $90-$95 payment when you get that notification.
+                        <br /><br />Now that you have your 3, you can strengthen your network and help the customers you have enrolled by continuing to add customers. You can add as many as you wish becuase they will all be in your network and you will get paid on them as well!
+                        <br /><br />Keep it going! Spread the word!
+                    </h5>
+                </p>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row" ng-show="kidCount()>2">
+            <br /><br /><br />
+            <div class="col-md-4"></div>
+            <div class="col-md-4" style="text-align:center">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Status Panel</div>
+                    <div class="panel-body">
+                        <ul class="list-group">
+                            <li class="list-group-item" style="text-align:left">
+                                <span class="badge">{{rank}}</span>
+                                Rank:
+                            </li>
+                            <li class="list-group-item" style="text-align:left">
+                                <span class="badge">{{kids}}</span>
+                                Teams:
+                            </li>
+                            <li class="list-group-item" style="text-align:left">
+                                <span class="badge">3</span>
+                                Promoters:
+                            </li>
+                            <li class="list-group-item" style="text-align:left">
+                                <span class="badge">0</span>
+                                Customers:
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+            </div>
+<!--</div>-->
+

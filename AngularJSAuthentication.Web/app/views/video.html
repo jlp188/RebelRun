@@ -1,0 +1,8 @@
+﻿<div id="controls">
+    <h1>video id: {{videoID()}}</h1>
+    W: <input class="valbox" ng-model="width" placeholder="width"></input>
+    H: <input class="valbox" ng-model="height" placeholder="height"></input>
+    <button ng-click="go()">Next Video</button>
+</div>
+
+<youtube id="{{current.id}}" width="{{width}}" height="{{height}}" current-time="time" controls="{{current.showControls}}"></youtube>

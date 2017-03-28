@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AngularJSAuthModel1" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Campaign">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="SeqNo" Type="Int32" />
+    <Property Name="Lvl" Type="Int32" />
+    <Property Name="Rank" Type="String" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="PrntID" Type="Int32" />
+    <Property Name="PassPrnt" Type="Int32" />
+    <Property Name="EnrollerID" Type="Int32" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="StartDate" Type="DateTime" Precision="3" />
+    <Property Name="Phone" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="LastLoginDate" Type="DateTime" Precision="3" />
+    <Property Name="DeviceID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="TokenID" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="AngularJSAuthEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Campaigns" EntityType="Self.Campaign" />
+    <FunctionImport Name="usp_getQualifiedPassdown" ReturnType="Collection(AngularJSAuthModel1.usp_getQualifiedPassdown_Result)">
+      <Parameter Name="id" Mode="In" Type="Int32" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="usp_getQualifiedPassdown_Result">
+    <Property Type="Int32" Name="ID" Nullable="true" />
+    <Property Type="Int32" Name="SeqNo" Nullable="true" />
+    <Property Type="Int32" Name="Lvl" Nullable="true" />
+    <Property Type="String" Name="Rank" Nullable="true" MaxLength="18" />
+    <Property Type="String" Name="Name" Nullable="true" MaxLength="100" />
+    <Property Type="Int32" Name="PrntID" Nullable="true" />
+    <Property Type="Int32" Name="PassPrnt" Nullable="true" />
+    <Property Type="Int32" Name="EnrollerID" Nullable="true" />
+    <Property Type="String" Name="Email" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="StartDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="Phone" Nullable="true" MaxLength="50" />
+    <Property Type="DateTime" Name="LastLoginDate" Nullable="true" Precision="23" />
+    <Property Type="String" Name="DeviceID" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="TokenID" Nullable="true" MaxLength="100" />
+  </ComplexType>
+</Schema>

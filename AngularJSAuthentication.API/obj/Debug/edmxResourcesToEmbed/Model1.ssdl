@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AngularJSAuthModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Campaign">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="SeqNo" Type="int" />
+    <Property Name="Lvl" Type="int" />
+    <Property Name="Rank" Type="varchar" MaxLength="18" />
+    <Property Name="Name" Type="varchar" MaxLength="100" />
+    <Property Name="PrntID" Type="int" />
+    <Property Name="PassPrnt" Type="int" />
+    <Property Name="EnrollerID" Type="int" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+    <Property Name="StartDate" Type="datetime" />
+    <Property Name="Phone" Type="varchar" MaxLength="50" />
+    <Property Name="LastLoginDate" Type="datetime" />
+    <Property Name="DeviceID" Type="varchar" MaxLength="100" />
+    <Property Name="TokenID" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <Function Name="usp_getQualifiedPassdown" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="id" Type="int" Mode="In" />
+  </Function>
+  <EntityContainer Name="AngularJSAuthModelStoreContainer">
+    <EntitySet Name="Campaign" EntityType="Self.Campaign" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

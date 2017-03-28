@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAVREmIodQ70WnGK1hO4xyPwAAAAACAAAAAAAQZgAAAAEAACAAAACugFjAyOVLlxKTf4i0b16S+YOwwSMQ1iam8C58786V/wAAAAAOgAAAAAIAACAAAADtsyrKrIFzI0JsVLr4wAZA1K5ayrYtyDxgEhg6kjb9PyAAAAB1p0Y4ja2Ua9c5MxZfkt1kjxmi8Zxaa5RpGW1UypXFSEAAAADjjRRf2Rg8nWZqHjUdCQm0RDnC+mKlPMs/lx9HTLne6uHn1qHKsVIeTr7dQfxHnWTd6v6RtPRcKRIVFqbv/nwy</EncryptedPassword>
+    <_PublishTargetUrl>ftp://ftppub.everleap.com/site/wwwroot</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="app/app.js">
+      <publishTime>03/26/2017 12:29:15</publishTime>
+    </File>
+    <File Include="app/controllers/associateController.js">
+      <publishTime>10/19/2016 18:56:47</publishTime>
+    </File>
+    <File Include="app/controllers/enrollController.js">
+      <publishTime>03/27/2017 12:36:30</publishTime>
+    </File>
+    <File Include="app/controllers/homeController.js">
+      <publishTime>06/14/2016 18:11:50</publishTime>
+    </File>
+    <File Include="app/controllers/indexController.js">
+      <publishTime>03/26/2017 13:24:30</publishTime>
+    </File>
+    <File Include="app/controllers/loginController.js">
+      <publishTime>11/23/2016 02:15:58</publishTime>
+    </File>
+    <File Include="app/controllers/ordersController.js">
+      <publishTime>06/14/2016 18:11:50</publishTime>
+    </File>
+    <File Include="app/controllers/refreshController.js">
+      <publishTime>06/14/2016 18:11:50</publishTime>
+    </File>
+    <File Include="app/controllers/scorecardController.js">
+      <publishTime>03/24/2017 17:49:52</publishTime>
+    </File>
+    <File Include="app/controllers/signupController.js">
+      <publishTime>06/14/2016 18:11:50</publishTime>
+    </File>
+    <File Include="app/controllers/tokensManagerController.js">
+      <publishTime>06/14/2016 18:11:50</publishTime>
+    </File>
+    <File Include="app/controllers/videoController.js">
+      <publishTime>03/16/2017 17:18:33</publishTime>
+    </File>
+    <File Include="app/pushbullet.jpg">
+      <publishTime>06/29/2016 22:41:50</publishTime>
+    </File>
+    <File Include="app/pushbullet.png">
+      <publishTime>06/29/2016 22:13:28</publishTime>
+    </File>
+    <File Include="app/services/authInterceptorService.js">
+      <publishTime>11/19/2016 02:49:02</publishTime>
+    </File>
+    <File Include="app/services/authService.js">
+      <publishTime>03/26/2017 14:08:06</publishTime>
+    </File>
+    <File Include="app/services/enrollService.js">
+      <publishTime>11/19/2016 03:57:59</publishTime>
+    </File>
+    <File Include="app/services/ordersService.js">
+      <publishTime>06/14/2016 18:11:50</publishTime>
+    </File>
+    <File Include="app/services/tokensManagerService.js">
+      <publishTime>06/14/2016 18:11:50</publishTime>
+    </File>
+    <File Include="app/services/validationService.js">
+      <publishTime>03/24/2017 17:48:23</publishTime>
+    </File>
+    <File Include="app/views/associate.html">
+      <publishTime>07/24/2016 19:09:23</publishTime>
+    </File>
+    <File Include="app/views/countdowntimer.html">
+      <publishTime>09/12/2016 21:49:37</publishTime>
+    </File>
+    <File Include="app/views/enroll.html">
+      <publishTime>03/23/2017 01:22:35</publishTime>
+    </File>
+    <File Include="app/views/home.html">
+      <publishTime>06/14/2016 18:11:50</publishTime>
+    </File>
+    <File Include="app/views/login.html">
+      <publishTime>03/22/2017 18:19:27</publishTime>
+    </File>
+    <File Include="app/views/orders.html">
+      <publishTime>11/14/2016 21:35:11</publishTime>
+    </File>
+    <File Include="app/views/orders1.html">
+      <publishTime>06/14/2016 18:11:50</publishTime>
+    </File>
+    <File Include="app/views/refresh.html">
+      <publishTime>06/14/2016 18:11:50</publishTime>
+    </File>
+    <File Include="app/views/scorecard.html">
+      <publishTime>03/24/2017 18:35:04</publishTime>
+    </File>
+    <File Include="app/views/signup.html">
+      <publishTime>06/14/2016 18:11:50</publishTime>
+    </File>
+    <File Include="app/views/tokens.html">
+      <publishTime>06/14/2016 18:11:50</publishTime>
+    </File>
+    <File Include="app/views/video.html">
+      <publishTime>12/02/2016 00:56:04</publishTime>
+    </File>
+    <File Include="app/views/video1.html">
+      <publishTime>03/16/2017 17:27:06</publishTime>
+    </File>
+    <File Include="authComplete.html">
+      <publishTime>06/14/2016 18:11:50</publishTime>
+    </File>
+    <File Include="bin/AngularJSAuthentication.Web.dll">
+      <publishTime>03/23/2017 12:32:20</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>06/13/2016 23:06:14</publishTime>
+    </File>
+    <File Include="content/css/bootstrap.min.css">
+      <publishTime>07/25/2016 16:53:28</publishTime>
+    </File>
+    <File Include="content/css/font-awesome.min.css">
+      <publishTime>11/03/2016 12:08:06</publishTime>
+    </File>
+    <File Include="content/css/loading-bar.css">
+      <publishTime>06/14/2016 18:11:50</publishTime>
+    </File>
+    <File Include="content/css/loading-bar.min.css">
+      <publishTime>06/14/2016 18:11:50</publishTime>
+    </File>
+    <File Include="content/css/site.css">
+      <publishTime>03/24/2017 18:13:57</publishTime>
+    </File>
+    <File Include="content/css/social-buttons.css">
+      <publishTime>06/29/2016 23:06:38</publishTime>
+    </File>
+    <File Include="content/fonts/fontawesome-webfont.eot">
+      <publishTime>11/03/2016 12:08:04</publishTime>
+    </File>
+    <File Include="content/fonts/fontawesome-webfont.svg">
+      <publishTime>11/03/2016 12:08:04</publishTime>
+    </File>
+    <File Include="content/fonts/fontawesome-webfont.ttf">
+      <publishTime>11/03/2016 12:08:04</publishTime>
+    </File>
+    <File Include="content/fonts/fontawesome-webfont.woff">
+      <publishTime>11/03/2016 12:08:04</publishTime>
+    </File>
+    <File Include="content/fonts/FontAwesome.otf">
+      <publishTime>11/03/2016 12:08:04</publishTime>
+    </File>
+    <File Include="content/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>06/14/2016 18:11:50</publishTime>
+    </File>
+    <File Include="content/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>06/14/2016 18:11:50</publishTime>
+    </File>
+    <File Include="content/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>06/14/2016 18:11:50</publishTime>
+    </File>
+    <File Include="content/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>06/14/2016 18:11:50</publishTime>
+    </File>
+    <File Include="index.html">
+      <publishTime>03/26/2017 14:08:18</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>01/24/2017 17:41:45</publishTime>
+    </File>
+    <File Include="scripts/angular-local-storage.min.js">
+      <publishTime>06/14/2016 18:11:50</publishTime>
+    </File>
+    <File Include="scripts/angular-timer.js">
+      <publishTime>08/02/2016 22:07:41</publishTime>
+    </File>
+    <File Include="scripts/angular-timer.min.js">
+      <publishTime>08/02/2016 20:00:15</publishTime>
+    </File>
+    <File Include="scripts/authComplete.js">
+      <publishTime>06/14/2016 18:11:50</publishTime>
+    </File>
+    <File Include="scripts/countdownTimer.js">
+      <publishTime>09/12/2016 22:08:10</publishTime>
+    </File>
+    <File Include="scripts/humanize-duration.js">
+      <publishTime>08/02/2016 20:00:15</publishTime>
+    </File>
+    <File Include="scripts/loading-bar.min.js">
+      <publishTime>06/14/2016 18:11:50</publishTime>
+    </File>
+    <File Include="scripts/locales.min.js">
+      <publishTime>08/02/2016 20:00:16</publishTime>
+    </File>
+    <File Include="scripts/moment.min.js">
+      <publishTime>08/02/2016 20:00:16</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/24/2017 17:37:07</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

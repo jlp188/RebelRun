@@ -1,0 +1,8 @@
+D:\VisualStudioDevelopment\Projects\AngularJSAuthentication.API\AngularJSAuthentication.Web\bin\AngularJSAuthentication.Web.dll.config
+D:\VisualStudioDevelopment\Projects\AngularJSAuthentication.API\AngularJSAuthentication.Web\bin\AngularJSAuthentication.Web.dll
+D:\VisualStudioDevelopment\Projects\AngularJSAuthentication.API\AngularJSAuthentication.Web\bin\AngularJSAuthentication.Web.pdb
+D:\VisualStudioDevelopment\Projects\AngularJSAuthentication.API\AngularJSAuthentication.Web\obj\Debug\AngularJSAuthentication.Web.csprojResolveAssemblyReference.cache
+D:\VisualStudioDevelopment\Projects\AngularJSAuthentication.API\AngularJSAuthentication.Web\obj\Debug\AngularJSAuthentication.Web.dll
+D:\VisualStudioDevelopment\Projects\AngularJSAuthentication.API\AngularJSAuthentication.Web\obj\Debug\AngularJSAuthentication.Web.pdb
+D:\VisualStudioDevelopment\Projects\AngularJSAuthentication.API\AngularJSAuthentication.Web\bin\Newtonsoft.Json.dll
+D:\VisualStudioDevelopment\Projects\AngularJSAuthentication.API\AngularJSAuthentication.Web\bin\Newtonsoft.Json.xml
